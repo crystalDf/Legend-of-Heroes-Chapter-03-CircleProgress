@@ -13,6 +13,10 @@ public class CircleProgressView extends View {
     private float mCircleXY;
     private float mRadius;
 
+    public CircleProgressView(Context context) {
+        super(context);
+    }
+
     public CircleProgressView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
