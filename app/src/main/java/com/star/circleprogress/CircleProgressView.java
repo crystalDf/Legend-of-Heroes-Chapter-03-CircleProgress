@@ -9,6 +9,9 @@ import android.view.View;
 
 public class CircleProgressView extends View {
 
+    private int mMeasureWidth;
+    private int mMeasureHeight;
+
     private Paint mCirclePaint;
     private float mCircleXY;
     private float mRadius;
@@ -23,12 +26,21 @@ public class CircleProgressView extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+        mMeasureWidth = MeasureSpec.getSize(widthMeasureSpec);
+        mMeasureHeight = MeasureSpec.getSize(heightMeasureSpec);
+
+        setMeasuredDimension(mMeasureWidth, mMeasureHeight);
+
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+    }
+
+    private void init() {
+
     }
 
 }
