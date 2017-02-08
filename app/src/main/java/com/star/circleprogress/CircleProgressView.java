@@ -40,7 +40,9 @@ public class CircleProgressView extends View {
     }
 
     private void init() {
+
         float length = 0;
+
     }
 
 }
