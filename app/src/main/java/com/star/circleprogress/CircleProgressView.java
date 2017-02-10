@@ -43,6 +43,8 @@ public class CircleProgressView extends View {
 
         float length = Math.min(mMeasureWidth, mMeasureHeight);
 
+        mCircleXY = length / 2;
+
     }
 
 }
