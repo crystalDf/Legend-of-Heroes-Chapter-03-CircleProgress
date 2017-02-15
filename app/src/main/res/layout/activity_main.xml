@@ -12,6 +12,7 @@
     tools:context="com.star.circleprogress.MainActivity">
 
     <com.star.circleprogress.CircleProgressView
+        android:id="@+id/circle_progress"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
