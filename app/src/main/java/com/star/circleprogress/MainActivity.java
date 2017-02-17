@@ -13,5 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mCircleProgressView = (CircleProgressView) findViewById(R.id.circle_progress);
+
+        mCircleProgressView.setSweepAngle(25);
     }
 }
